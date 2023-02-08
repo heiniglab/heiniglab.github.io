@@ -8,7 +8,7 @@ Technological advances allow for an unprecedented in-depth characterization of t
 
 The aim of our research is the development and application of computational and statistical tools for the identification of molecular regulatory networks underlying common diseases and the genetic and epigenetic mechanisms controlling these networks from population level DNA and multi-omics data sets. A special focus is the molecular characterization of metabolic and cardiovascular diseases, in particular diabetes and arrhythmias like atrial or ventricular fibrillation.
 
-![Using regulatory networks to understand complex traits](https://www.helmholtz-munich.de/fileadmin/ICB/Genetic_and_Epigenetic_Gene_Regulation/group_scheme_crop.png)
+![Using regulatory networks to understand complex traits](img/group_scheme_crop.png)
 
 ## Projects
 
