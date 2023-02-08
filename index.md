@@ -4,9 +4,11 @@
 
 The [Heinig lab](https://www.helmholtz-munich.de/icb/research/groups/genetic-and-epigenetic-gene-regulation/projects/index.html) is located at the [Insitiute of Computational Biology](https://comp.bio), which is part of the [Computational Health Center](https://www.helmholtz-munich.de/computational-health-center/) of [Helmholtz Munich](https://www.helmholtz-munich.de/).
 
+Together with my research group, I develop AI solutions for personalized network based precision medicine.
+
 Technological advances allow for an unprecedented in-depth characterization of the molecular basis of complex diseases. In particular SNP genotyping, DNA methylation assays and gene expression profiling in large cohorts have been used to identify numerous disease associated loci and genes. However, a deeper mechanistic or systems level understanding of disease processes still remains elusive in most cases.
 
-The aim of our research is the development and application of computational and statistical tools for the identification of molecular regulatory networks underlying common diseases and the genetic and epigenetic mechanisms controlling these networks from population level DNA and multi-omics data sets. A special focus is the molecular characterization of metabolic and cardiovascular diseases, in particular diabetes and arrhythmias like atrial or ventricular fibrillation.
+The aim of our research is the development and application of computational and statistical tools for the identification of molecular regulatory networks underlying common diseases and the genetic and epigenetic mechanisms controlling these networks from population level DNA and multi-omics data sets. In a second step we aim to personalize the networks based on single cell data. This will enable us to implement new concepts for precision medicine. A special focus is the molecular characterization of metabolic and cardiovascular diseases, in particular diabetes and arrhythmias like atrial or ventricular fibrillation.
 
 ![Using regulatory networks to understand complex traits](img/group_scheme_crop.png)
 
@@ -16,21 +18,41 @@ The aim of our research is the development and application of computational and 
 
 Motivated by the fact that most disease associated variants identified to date are located in non-coding parts of the genome, which likely harbors regulatory elements, we are studying the effect of naturally occurring sequence variation on gene regulation. To characterize regulatory sequence variants two related challenges have to be met: 1) regulatory elements have to be recognized and 2) the corresponding target genes have to be identified. Epigenetic marks such as histone modifications have proved instrumental for the identification of regulatory elements in the genome, while the integrated analysis of genetic variation and gene expression provides a strategy (expression QTL mapping) to identify targets of regulatory variants. Ultimately the integration of genetic, genomic and epigenomic data set is expected to lead to a comprehensive understanding of regulatory sequence variation and its role in disease. Towards these goals we have:
 
-- developed the computational tool [sTRAP](http://trap.molgen.mpg.de/cgi-bin/home.cgi) for the identification of causative cis regulatory variants affecting transcription factor binding [(Manke*, Heinig* Hum Mutat 2010)](https://pubmed.ncbi.nlm.nih.gov/20127973/) and successfully applied this tool in a disease gene study [(Monti Nat Genet 2008)](https://pubmed.ncbi.nlm.nih.gov/18443590/) for heart failure,
-- developed a statistical approach for the identification of a transcription factor driven regulatory network, including its master regulator and the interpretation of disease association (type 1 diabetes) using this regulatory network [(Heinig Nature 2010)](https://pubmed.ncbi.nlm.nih.gov/20827270/),
-- performed an integrated analysis of the consequences of genetic variation for multiple levels of epigenetic and transcriptional regulation [(Rintisch*, Heinig* Genome Res 2014)](https://pubmed.ncbi.nlm.nih.gov/24793478/),
+- developed a random walk approach to identify the regulatory networks underlying common disease from DNA-methylation data [(Hawe Nature Genetics 2022)](https://www.nature.com/articles/s41588-021-00969-x) - [code](https://github.com/heiniglab/hawe2021_meQTL_analyses#identification-of-eqtms)
+- extended this approach using Bayesian graphical models to make full use of prior networks and the correlation structure in the data [(Hawe Genome Medicine 2022)](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01124-9) - [code](https://github.com/jhawe/bggm/)
+- integrated proteomics and gene expression to identify cis and trans acting eQTL/pQTL in the human atrial appendage [(Assum Nature Communications 2022)](https://www.nature.com/articles/s41467-022-27953-1) - [code](https://github.com/heiniglab/symatrial) 
+- reviewed current methods for network reconstruction from multi-omics data [(Hawe Frontiers in Genetics 2019)](https://www.frontiersin.org/articles/10.3389/fgene.2019.00535/full)
+- performed one of the largest eQTL studies to date in the human heart [(Heinig Genome Biology 2017)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1286-z)
 - developed the computational tool [histoneHMM](https://github.com/matthiasheinig/histoneHMM) for the identification of differentially modified regions for histone modifications with broad genomic footprints [(Heinig BMC Bioinformatics 2015)](https://pubmed.ncbi.nlm.nih.gov/25884684/).
  developed predictive models to identify functional genomic elements predictive of regulatory variants [(Budach, Heinig* and Marsico* Genetics 2016)](https://academic.oup.com/genetics/article/203/4/1629/6065860)
-- performed one of the largest eQTL studies to date in the human heart [(Heinig Genome Biology 2017)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1286-z)
+- performed an integrated analysis of the consequences of genetic variation for multiple levels of epigenetic and transcriptional regulation [(Rintisch*, Heinig* Genome Res 2014)](https://pubmed.ncbi.nlm.nih.gov/24793478/)
+- developed a statistical approach for the identification of a transcription factor driven regulatory network, including its master regulator and the interpretation of disease association (type 1 diabetes) using this regulatory network [(Heinig Nature 2010)](https://pubmed.ncbi.nlm.nih.gov/20827270/)
+- developed the computational tool [sTRAP](http://trap.molgen.mpg.de/cgi-bin/home.cgi) for the identification of causative cis regulatory variants affecting transcription factor binding [(Manke*, Heinig* Hum Mutat 2010)](https://pubmed.ncbi.nlm.nih.gov/20127973/) and successfully applied this tool in a disease gene study [(Monti Nat Genet 2008)](https://pubmed.ncbi.nlm.nih.gov/18443590/) for heart failure
 
-### Regulatory networks and computational systems biology of atrial fibrillation
 
-Atrial fibrillation is the most common form of arrhythmia. It leads to a fivefold increase in the risk of stroke and thus constitutes a major health burden. Within the SymAtrial junior research alliance, we are characterizing the molecular pathways and regulatory mechanisms involved in disease aetiology and progression by using integrative data analysis and multilevel modelling. In particular we will:
+### Using single cell trancriptomics to personalize gene regulatory networks
 
-- Identify deregulated key transcription factors and their target genes using differential expression results in a case control setup.
-- Identify posttranscriptional regulatory mechanisms using integrated analysis of deregulated miRNAs and their mRNA and protein targets. 
-- Identify candidate causal variants for published and novel GWA loci using heart eQTL data, DNA methylation data and publicly available chromatin data in conjunction with computational sequence analysis.
-- Integrate the components of the AF associated regulatory networks, relate them to metabolite concentrations and translate results to potential blood-based omics markers.
+Single cell RNA-seq not only enables us to explore the individual celltypes and their transcriptional programs. It also enables to study the effects of common and rare gene variation with celltype resolution. Importantly, it enables us to personalize gene regulatory networks. 
+
+Current approaches infer a single network, which can be thought of as a static reference for the whole population. In reality however, inter-individual differences in the genome and the environment are expected to cause differences in the network topology. Therefore, not just a single reference core gene network but a personalizable core gene network is required for precision medicine applications. Single cell RNA-seq measures the full transcriptomes of multiple cells of the same person. This allows to infer person and celltype-specific gene regulatory networks.
+
+To fully leverage the potential of single cell data we have:
+
+- teamed up with the [seed network for the human cell atlas](https://chanzuckerberg.com/science/programs-resources/single-cell-biology/seednetworks/a-spatial-cell-type-reference-atlas-of-the-adult-human-heart/) to build the first reference cell atlas of the human heart [(Litvinukova Nature 2020)](https://www.nature.com/articles/s41586-020-2797-4) - [code](https://github.com/cartal/HCA_Heart)
+- studied the effect of rare pathogenic variants on cardiac celltype composition and expression programs in patients with dilated cardiomyopathy [(Reichart  Science 2022)](https://www.science.org/doi/10.1126/science.abo1984) - [code](https://github.com/heiniglab/DCM_heart_cell_atlas)
+- teamed up with the [single cell eQTLgen consortium](https://www.eqtlgen.org/sc/index.html) to outline a strategy to identify cell type specific eQTL [(van der Wijst Elife 2020)](https://elifesciences.org/articles/52155)
+- developed [scPower](http://scpower.helmholtz-muenchen.de): the first scalabel and generally applicable power analysis tool for multi-sample single cell transcriptomics experiments such as eQTL [(Schmid Nature Communications 2021)](https://doi.org/10.1038/s41467-021-26779-7) - [code](https://github.com/heiniglab/scPower)
+- developed computational approaches to personalize co-expression networks [(Li Genome Biology 2023 - in press)](https://www.biorxiv.org/content/10.1101/2022.04.20.488925v1)
+
+
+### Identifying disease core genes and their networks
+
+Complex traits are associated with houndreds if not thousands of non-coding variants throughout the whole genome. Theoretical models such as the [omnigenic core gene model](https://www.cell.com/cell/pdf/S0092-8674(19)30400-3.pdf) have been proposed to reconcile this observed genetic architecture with the potential molecular mechanisms: when small effects of multiple risk loci converge on the same downstream core genes in regulatory networks, a large proportion of the heritability can be explained. The key challenges are that downstream targets are difficult to identify using QTL data and that the core genes for specific diseases are unknown.
+
+To adress these challenges, we have:
+
+- developed [Speos](https://github.com/fratajcz/speos) - a graph neural network approach to predict core genes of complex disease from network, GWAS and gene expression data [(Ratajzcak bioRxiv 2023)](https://www.biorxiv.org/content/10.1101/2023.01.13.523556v1) - [code](https://github.com/fratajcz/speos) - [docs](https://speos.readthedocs.io/en/latest/index.html)
+- developed a data integration approach that makes use of polygenic risk scores and pathway annotations to identify trans-acting QTL from protein and transcript expression data. We applied it to the atrial fibrillation cohort of the symAtrial consortium to identify candidate core genes of atrial fibrillation [(Assum Nature Communications 2022)](https://www.nature.com/articles/s41467-022-27953-1) - [code](https://github.com/heiniglab/symatrial) 
 
 ### Publications
 
