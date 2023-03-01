@@ -2,7 +2,7 @@
 
 ## Overview
 
-The [Heinig lab](https://www.helmholtz-munich.de/icb/research/groups/genetic-and-epigenetic-gene-regulation/projects/index.html) is located at the [Insitiute of Computational Biology](https://comp.bio), which is part of the [Computational Health Center](https://www.helmholtz-munich.de/computational-health-center/) of [Helmholtz Munich](https://www.helmholtz-munich.de/).
+The [Heinig lab](https://www.helmholtz-munich.de/en/research-group-lab-40-2) is located at the [Insitiute of Computational Biology](https://comp.bio), which is part of the [Computational Health Center](https://www.helmholtz-munich.de/computational-health-center/) of [Helmholtz Munich](https://www.helmholtz-munich.de/).
 
 Together with my research group, I develop **AI solutions for personalized network based precision medicine**.
 
