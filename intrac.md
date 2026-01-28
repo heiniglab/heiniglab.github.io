@@ -1,6 +1,8 @@
+---
 layout: page
 title: "InTraC knowledge base"
 permalink: /intrac
+---
 
 # InTraC knowledge base
 
@@ -40,7 +42,13 @@ Long read sequencing:
 
 ## Training resources to get up to speed with data analysis
 
+Full information about our traning courses can be found [here](https://filehub.admiralcloud.com/dl/5/9ede6627-aeb3-4237-91c0-37971d765170). 
+
+![training courses overview](https://images.admiralcloud.com/v5/deliverEmbed/2e6fc1d0-7c6f-4030-b362-a142ba1128c8/image_webp/cropperjsfocus/1100/921/0,0,3840,3216,0,1,1/1920,1608?poc=true)
+
 ## Data management in the InTraC knowledge base
+
+
 
 ## The interactive InTrac data analysis platform
 
